@@ -13,6 +13,7 @@ export class AppComponent {
 	constructor(private apiService: ApiService) {}
 
   title = 'EMOJIFIER';
+  uri ='http://local:3000';
 	imageUrl = '';
 	htmlToAdd = '';
 
@@ -46,7 +47,7 @@ export class AppComponent {
       	});
       
         // TODO: Add emoji to image here
-        this.htmlToAdd+=`<img class="emoji" style="${style}" src="/assets/${mainEmotion}.ong"/>`
+        this.htmlToAdd+=`<img class="emoji" style="${style}" src="/assets/${mainEmotion}.png"/>`;
       })
     });
 	}
